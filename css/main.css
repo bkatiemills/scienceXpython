@@ -435,3 +435,13 @@ section .firefoxos {
 .bigbigpic{
   max-width: 80%;
 }
+
+ul {
+  font-size:24px; 
+  text-align:left; 
+  line-height:1.2em;
+}
+
+li {
+  margin-bottom: 15px;
+}

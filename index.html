@@ -1,613 +1,190 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Science x Python</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-    <div id="warning" class="transparent"><span>Hey, Listen! This presentation works THE BEST in Webkit/Blink browsersonly. Sorry about that. Pull requests welcome?</span></div>
-    <article>
-      <section data-bespoke-state="intro" class="intro">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              for Vancouver Python Day
-            </div>
-          </div>
-          <h1>Science X Python</h1>
-          <h3>What labs can learn from the python community</h3>
-          <div class="byline">
-            <div class="classy">
-              by Bill Mills
-            </div>
+<head>
+  <meta charset="utf-8">
+  <title>Science x Python</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="warning" class="transparent"><span>Hey, Listen! This presentation works THE BEST in Webkit/Blink browsersonly. Sorry about that. Pull requests welcome?</span></div>
+  <article>
+
+    <section data-bespoke-state="intro" class="intro">
+      <div class="content">
+        <div class="byline">
+          <div class="classy">
+            Niche Interests
           </div>
         </div>
-      </section>
-
-      <section data-bespoke-state="jobs" class="jobs">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              physicist & scientific software developer
-            </div>
-          </div>
-          <table>
-            <tr>
-              <td><img src="img/triumf.png"></td>
-              <td><img src="img/cern.png"></td>
-              <td><img src="img/mozilla.png"></td>
-            </tr>
-          </table>
-          <div class="byline">
-            <div class="classy">
-              previously at these fine institutions
-            </div>
+        <h1>Coding for Science</h1>
+        <h3>addressing the software crisis in the sciences</h3>
+        <div class="byline">
+          <div class="classy">
+            by Bill Mills
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="whatis">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h3>What is open science?</h3>
-          <div class="byline">
-            <div class="classy">
-              There are opinions.
-            </div>
+    <section data-bespoke-state="jobs" class="jobs">
+      <div class="content">
+        <div class="byline">
+          <div class="classy">
+            physicist &amp; scientific software developer
           </div>
         </div>
-      </section>
-
-      <section class="foundations">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Open Science methodology</h2> <h2>emphasizes:</h2>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- transparency</h4>
-            <h4>- reuse</h4>
-            <h4>- reproducibility</h4>
-            <h4>- collaboration</h4>
+        <table>
+          <tr>
+            <td><img src="img/triumf.png"></td>
+            <td><img src="img/cern.png"></td>
+            <td><img src="img/mozilla.png"></td>
+            <td><img style='max-width:10vw;' src="img/docker.png"></td>
+          </tr>
+        </table>
+        <div class="byline">
+          <div class="classy">
+            previously at these fine institutions
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="scicom">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>The state of</h2> <h2>scientific computing</h2>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- minimal code reuse</h4>
-            <h4>- virtually no training</h4>
-            <h4>- no credit for sw contributions</h4>
-            <h4>- minimal discussion of sw in papers & conferences</h4>
+    <section class="whatis">
+      <div class="content">
+        <div class="unbrokenline"></div>
+        <h3>If software really did eat the world</h3>
+        <div class="byline">
+          <div class="classy">
+            Then the sciences were the appetizer.
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--section data-bespoke-state="frustrating" class="frustrating">
-        <div class="content">
-        </div>
-      </section-->
+    <section class="foundations">
+      <div class="content">
+        <img style='max-height:90vh;' src="img/chart.png">
+      </div>
+    </section>
 
-      <section class="scicom">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>...and then 'big data' happened</h2>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- Astronomy, genomics & collider physics approaching petabyte scale</h4>
-            <h4>- Ecological modeling</h4>
-            <h4>- Social Sciences --> Digital Humanities</h4>
-            <h4>- ...just to name a few.</h4>
+    <section class="intro">
+      <div class="content">
+        <div class="byline">
+          <div class="classy">
+            And yet
           </div>
         </div>
-      </section>
-
-      <section data-bespoke-state="debugging" class="debugging">
-        <div class="content">
-        </div>
-      </section>
-
-      <section class="ssd">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Enter the Scientific Software Developer</h2>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="future">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Two Possible Futures</h2>
-          <div class="unbrokenline"></div>
-          <img src="img/goku2.png">
-        </div>
-      </section>
-
-      <section class="metaresponsibilities">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Metaresponsibilities</h2>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- support collaborative coding</h4>
-            <h4>- write for reuse</h4>
-            <h4>- promote discoverability</h4>
-            <h4>- build capacity</h4>
+        <h3>we still don't really teach scientists how to code</h3>
+        <div class="byline">
+          <div class="classy">
+            nor do we leverage much from private industry
           </div>
         </div>
-      </section>
+        <img src="img/frustrated.gif">
+      </div>
+    </section>
 
-      <section class="ssd">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Metaresponsibility no. 1
-            </div>
-          </div>
-          <h2>Support Collaborative Coding</h2>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="cares">
-        <div class="content" style='width:600px'>
-          <h2>Work together or else</h2>
-          <img src="img/cares.gif">
-        </div>
-      </section>
-
-      <section class="metaresponsibilities">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Post mortem</h2>
-          <h3>the lab did not:</h3>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- understand project motivation</h4>
-            <h4>- have the (JS) skills to maintain the code</h4>
-            <h4>- feel a sense of ownership</h4>
+    <section class="intro">
+      <div class="content">
+        <div class="byline">
+          <div class="classy">
+            There are concequences
           </div>
         </div>
-      </section>
+        <ul>
+          <li style='color:yellow'>Critical lack of transparency &amp; repeatability</li>
+          <li>Massive time &amp; budget wasted reinventing wheels instead of building on past work</li>
+          <li>Significant unnecessary frustration for scientists</li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="withnotfor">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Write code
-            </div>
-          </div>
-          <h2>with our colleagues</h2>
-          <div class="byline">
-            <div class="classy">
-              not
-            </div>
-          </div>
-          <h2>for them</h2>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="withnotfor">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Fine sure but how?
-            </div>
-          </div>
-          <h2>Our code needs to emphasize:</h2>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- Simplicity</h4>
-            <h4>- Explicitness</h4>
-            <h4>- Readability</h4>
+    <section class="intro">
+      <div class="content">
+        <h3>Analytic Repeatability &amp; Transparency</h3>
+        <div class="byline">
+          <div class="classy">
+            It's not enough to just slap your code up on GitHub
           </div>
         </div>
-      </section>
+        <ul>
+          <li>Code must be <span style='color:yellow'>runnable</span>, not just available</li>
+          <li>Means we have to distribute dependencies, configurations and data as well as the code itself</li>
+          <li><span style='color:yellow'>Containerization</span> packages all this in runnable, shareable, archivable objects</li>
+        </ul>
+        <img style='max-width:30vw;' src="img/contianer.png">
+      </div>
+    </section>
 
-      <section class="pep20">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <div class="byline">
-            <div class="classy">
-              This is pretty much
-            </div>
-          </div>
-          <h2>PEP 20</h2>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-<!--       <section class="pragmatism">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Pragmatism First</h2>
-          <div class="byline">
-            <div class="classy">
-              Python 2.x to 3.x
-            </div>
-          </div>
-          <div class="fake-list">
-            <h4>- short period from PEP 3000 to 3.0 (2 years)</h4>
-            <h4>- long period of dual support (5+ years)</h4>
-            <h4>- lockstep releases, warnings module</h4>
+    <section class="intro">
+      <div class="content">
+        <h3>Coding for Reuse</h3>
+        <div class="byline">
+          <div class="classy">
+            ie standing on the shoulders of digital giants
           </div>
         </div>
-      </section> -->
+        <ul>
+          <li>Code standards are rarely taught and never enforced for students; emphasis is on shortest time to results</li>
+          <li>Short term planning leads to spaghetti scripting</li>
+          <li style='color:yellow'>Code reuse relies on modular, semantic, falsifiable architecture.</li>
+          <li>Reusing code results in <i>fastest</i> time to results <i>and</i> highest quality code</li>
+        </ul>
+        <img style='display:inline; max-width:20vw' src="img/spaghetti.png">
+        <img style='display:inline; max-width:13vw' src="img/lego.png">
+      </div>
+    </section>
 
-      <section class="reuse">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Metaresponsibility no. 2
-            </div>
-          </div>
-          <h1>Writing for Reuse</h1>
-          <div class="byline">
-            <div class="classy">
-              or
-            </div>
-          </div>
-          <h2>Avoiding Peak Spaghetti</h2>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="engineering">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Reusable engineering</h2>
-          <div class="unbrokenline"></div>
-          <img src="img/lego.png">
-        </div>
-      </section>
-
-      <section class="normalize">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Good decision #1:
-            </div>
-          </div>
-          <h2>Python normalizes modularity</h2>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="agresive">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Good decision #2:
-            </div>
-          </div>
-          <h2>Python is aggressively modular</h2>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="pypi">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Good decision #3:
-            </div>
-          </div>
-          <h2>PyPI is friendly</h2>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="exchange">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Must haves for
-            </div>
-          </div>
-          <h2>Code Exchange</h2>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- Make it familiar</h4>
-            <h4>- Make it natural</h4>
-            <h4>- Make it friendly</h4>
+    <section data-bespoke-state="intro" class="intro">
+      <div class="content">
+        <div class="byline">
+          <div class="classy">
+            I'm building a course on the above
           </div>
         </div>
-      </section>
-
-      <section class="discoverability">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Metaresponsibility no. 3
-            </div>
-          </div>
-          <h1>Discoverability</h1>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-<!--       <section class="reuse">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Live demo gods forgive me,
-            </div>
-          </div>
-          <h1>Tweet-length description</h1> <h1>of your current project</h1>
-          <div class="byline">
-            <div class="classy">
-              Shout it out
-            </div>
+        <h3>Repeatable Coding for Scientists</h3>
+        <div class="byline">
+          <div class="classy">
+            shameless self promotion alert
           </div>
         </div>
-      </section> -->
+        <ul>
+          <li>Goal: cherry pick tools and techniques from private industry SW development and ops, <br>and repurpose them for scientific audiences.</li>
+          <li>Audience: can be tailored to undergrad, grad, or pro scientists, all disciplines welcome</li>
+          <li>Topics:</li>
+          <ul>
+            <li>Writing, testing and packaging reusable code (probably in Python)</li>
+            <li>Containerizing software with Docker (and orchestrating with Kubernetes?)</li>
+            <li>Successful code collaboration with Git and GitHub</li>
+            <li>Other topics tbd (CI? Data standards? Others?)</li>
+          </ul>
+          <li style='color: yellow'>Forum: TBD, needs a home! Contact mills.wj@gmail.com</li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="formal">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Problem:
-            </div>
-          </div>
-          <h1>Scientific communication is too formal</h1>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>      
 
-      <section class="loud">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Pythonistas are loud</h2>
-          <div class="byline">
-            <div class="classy">
-              judging purely by meetup.com & planetpython.org:
-            </div>
-          </div>
-          <div class="fake-list">
-            <h4>- Python meetups start daily (at least)</h4>
-            <h4>- Someone blogs about Python every 3 seconds (feels like)</h4>
-          </div>          
-        </div>
-      </section>
 
-<!--       <section class="immediate">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h2>Immediate Communication Matters</h2>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- 5x impact factor for papers released immediately (arXiv:0906.5418)</h4>
-            <h4>- Recall importance of including people in development discussions</h4>
-          </div>          
-        </div>
-      </section> -->
 
-      <section class="pycon">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              The
-            </div>
-          </div>
-          <h2>Pycon</h2>
-          <div class="byline">
-            <div class="classy">
-              communication model
-            </div>
-          </div>
-          <div class="fake-list">
-            <h4>- talks span crunchy to cultural</h4>
-            <h4>- talks at all technical levels encouraged</h4>
-            <h4>- diversity & ethics explicitly called out</h4>
-          </div>          
-        </div>
-      </section>
 
-      <section class="capacity">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Metaresponsibility no. 4
-            </div>
-          </div>
-          <h1>Capacity Building</h1>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="education">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h1>Education is Complicated</h1>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- Rampant gender bias</h4>
-            <h4>- Undergrad classes: no room in curriculum</h4>
-            <h4>- Online resources don't provide (good) feedback</h4>
-            <h4>- Workshops don't scaffold long-term practice</h4>
-          </div>
-        </div>
-      </section>
-
-      <section class="pyladies">
-        <div class="content" style='width:600px'>
-          <img src="img/pyladies.png">
-        </div>
-      </section>
-
-      <section class="education">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h1>Pyladies is awesome</h1>
-          <div class="unbrokenline"></div>
-          <div class="fake-list">
-            <h4>- diversity first</h4>
-            <h4>- peer driven / minimal power hierarchy</h4>
-            <h4>- skills focused</h4>
-            <h4>- pedagogically smart</h4>
-          </div>
-        </div>
-      </section>
-
-      <section class="msg">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              You helped inspire
-            </div>
-          </div>
-          <h1>Mozilla Study Groups</h1>
-          <div class="unbrokenline"></div>
-          <script src="https://embed.github.com/view/geojson/mozillascience/studyGroupLessons/master/whereWeAre.geojson"></script>
-        </div>
-      </section>
-
-      <section class="tldr">
-        <div class="content">
-          <div class="unbrokenline"></div>
-          <h1>TL;DR</h1>
-          <div class="unbrokenline"></div>
-        </div>
-      </section>
-
-      <section class="conclude">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              Python is
-            </div>
-          </div>
-          <h2>building a community</h2>
-          <div class="byline">
-            <div class="classy">
-              that is
-            </div>
-          </div>
-          <h2>diverse</h2>
-          <div class="unbrokenline"></div>      
-        </div>
-      </section>
-
-      <section class="conclude">
-        <div class="content nofade">
-          <div class="byline">
-            <div class="classy">
-              Python is
-            </div>
-          </div>
-          <h2>building a community</h2>
-          <div class="byline">
-            <div class="classy">
-              that is
-            </div>
-          </div>
-          <h2>diverse, legible</h2>
-          <div class="unbrokenline"></div>      
-        </div>
-      </section>
-
-      <section class="conclude">
-        <div class="content nofade">
-          <div class="byline">
-            <div class="classy">
-              Python is
-            </div>
-          </div>
-          <h2>building a community</h2>
-          <div class="byline">
-            <div class="classy">
-              that is
-            </div>
-          </div>
-          <h2>diverse, legible, practical</h2>
-          <div class="unbrokenline"></div>      
-        </div>
-      </section>
-
-      <section class="conclude">
-        <div class="content nofade">
-          <div class="byline">
-            <div class="classy">
-              Python is
-            </div>
-          </div>
-          <h2>building a community</h2>
-          <div class="byline">
-            <div class="classy">
-              that is
-            </div>
-          </div>
-          <h2>diverse, legible, practical, accessible</h2>
-          <div class="unbrokenline"></div>      
-        </div>
-      </section>
-
-      <section class="conclude">
-        <div class="content nofade">
-          <div class="byline">
-            <div class="classy">
-              Python is
-            </div>
-          </div>
-          <h2>building a community</h2>
-          <div class="byline">
-            <div class="classy">
-              that is
-            </div>
-          </div>
-          <h2>diverse, legible, practical, accessible & open</h2>
-          <div class="unbrokenline"></div>      
-        </div>
-      </section>
-
-      <section data-bespoke-state="final" class="intro">
-        <div class="content">
-          <div class="byline">
-            <div class="classy">
-              This has been
-            </div>
-          </div>
-          <h1>Science x Python</h1>
-          <div class="byline">
-            <div class="classy">
-              by Bill Mills
-            </div>
-          </div>
-          <h3>@billdoesphysics</h3>
-          <table>
-            <tr>
-              <td><img src="img/pixbeaker.png"></td>
-              <td><img src="img/pixheart.png"></td>
-              <td><img src="img/pixsnake.png"></td>
-            </tr>
-          </table>
-        </div>
-
-        
-      </section>
+   
 
     </article>
     <script type="text/javascript">
-      WebFontConfig = {
-        google: { families: [ 'Tauri::latin', 'Alegreya:400italic:latin' ] }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })(); 
+    WebFontConfig = {
+      google: { families: [ 'Tauri::latin', 'Alegreya:400italic:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); 
     </script>
     <script src="js/bespoke.js"></script>
     <script src="js/deck.js"></script>
-    </body>
-</html>
+  </body>
+  </html>
